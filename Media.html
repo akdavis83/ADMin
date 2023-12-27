@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AD Ministries Media</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fondamento&display=swap');
+      *{
+      font: 18px 'Fondamento', cursive;
+    }
+      </style>
+    <style>
+        #logo{
+            border-radius: 50%;
+            margin: 20px;
+        }
+        #logo2{
+            border-radius: 50%;
+            margin: 20px;
+            float: right;
+        }
+        h1 {text-align: center; font-size: 32px;
+        
+        }
+        ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: darkgray;
+}
+/* Add a white right border to all list items, except the last item (last-child) */
+li {
+  border-right: 1px solid white;
+}
+
+li:last-child {
+  border-right: none;
+}
+    </style>
+
+</head>
+<body>
+    <header style="background-color: black; color: white; background-size: 100px;">
+
+        <img id="logo" src="Logo1.JPG" alt="Logo1" width="100px" >
+        <img id="logo2" src="Logo1.JPG" alt="Logo1" width="100px" >
+        <h1>
+            AD Ministries
+        </h1>
+
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Devo1.html">Devotional</a></li>
+            <li><a href="Search.html">Search</a></li>
+            <li><a href="Media.html">Media</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <p>
+            Welcome to my page where it is all about God the Father, Jesus Christ the Son, and the Holy Ghost and how to practically apply the Word of God to our daily lives. Stay tuned for updates and more!
+
+        </p>
+        <br>
+        <p>
+          Spiritual Armor mp3:
+        </p>
+        <audio controls>
+            <source src="Spiritual Armour.mp3 "audio/mpeg">
+          Your browser does not support the audio element.
+          </audio>
+          <br>
+          <p>
+            New media is on the way soon...stay tuned! While waiting, take some time and listen to this archive message from 2016.
+          </p>
+<!-- Display the countdown timer in an element -->
+<p id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 5, 2025 01:00:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+    </main>
+    <a href="https://www.freecounterstat.com" title="hit counter"><img src="https://counter7.optistats.ovh/private/freecounterstat.php?c=f13x89nbhl491gfdj7qc7szdqgylzs6j" border="0" title="hit counter" alt="hit counter"></a>
+    <footer style="background-color: black; color: white; text-align: center; background-size: 100px;">
+        <h3>
+            <i class="fa fa-copyright" aria-hidden="true">&copy Copyright 2024</i>
+        </h3>
+
+    </footer>
+    
+</body>
+</html>
