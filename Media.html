@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AD Ministries Media</title>
     <link rel="shortcut icon" href="cross fire.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Fondamento&display=swap');
       *{
@@ -55,6 +56,32 @@ li {
 li:last-child {
   border-right: none;
 }
+.btn-group button {
+  background-color: black; /* Black background */
+  border: 1px solid gray; /* Grey border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+  width: 500px;
+  height: 50px;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: darkgray;
+}
     </style>
 
 </head>
@@ -95,6 +122,9 @@ li:last-child {
           <p>
             New media is on the way soon...stay tuned! While waiting, take some time and listen to this archive message from 2016.
           </p>
+          <div class="btn-group">
+            <button><a href="https://akdavis83.github.io/AD/storesignup.html" style="text-decoration: none; color: white;">STORE<i class="fa fa-shopping-cart"></i></a></button>
+          </div>
 <!-- Display the countdown timer in an element -->
 <p id="demo"></p>
 
